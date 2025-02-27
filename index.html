@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Presto.it</title>
+    <!-- Bootstrap Css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- AOS Css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- My Css -->
+    <link href="style.css" rel="stylesheet" />
+
+    <!-- Standard Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+
+    <!-- Apple Touch Icon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="192x192"
+      href="favicon/android-chrome-192x192.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="512x512"
+      href="favicon/android-chrome-512x512.png"
+    />
+    <link rel="apple-touch-icon" href="favicon/apple-touch-icon.png" />
+
+    <!-- Fallback favicon -->
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"
+          ><img
+            class="logo"
+            src="img/prestoit-high-resolution-logo-transparent.png"
+            alt="logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#products">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <input
+          type="checkbox"
+          id="darkmode-toggle"
+          aria-label="Toggle dark mode"
+        />
+        <label for="darkmode-toggle" class="darkmode-toggle">
+          <svg
+            class="sun"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <path
+              d="M12 3V4M12 20V21M4 12H3M6.31412 6.31412L5.5 5.5M17.6859 6.31412L18.5 5.5M6.31412 17.69L5.5 18.5001M17.6859 17.69L18.5 18.5001M21 12H20M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12Z"
+              stroke="#000"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <svg
+            class="moon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <path
+              d="M3.32031 11.6835C3.32031 16.6541 7.34975 20.6835 12.3203 20.6835C16.1075 20.6835 19.3483 18.3443 20.6768 15.032C19.6402 15.4486 18.5059 15.6834 17.3203 15.6834C12.3497 15.6834 8.32031 11.654 8.32031 6.68342C8.32031 5.50338 8.55165 4.36259 8.96453 3.32996C5.65605 4.66028 3.32031 7.89912 3.32031 11.6835Z"
+              stroke="#fff"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </label>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header
+      class="hero-section d-flex align-items-center justify-content-center text-center"
+    >
+      <div>
+        <h1 data-aos="fade-up">Buy & Sell Anything!</h1>
+        <p data-aos="fade-up" data-aos-delay="200">
+          Your one-stop shop for all products
+        </p>
+      </div>
+    </header>
+
+    <!-- Products Section -->
+    <section id="products" class="content-section py-5" data-aos="fade-up">
+      <div class="container">
+        <h2 class="text-center mb-5">Our Products</h2>
+        <div class="row">
+          <!-- Product Card 1 -->
+          <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="card">
+              <img src="img/iphone.jpg" class="card-img-top" alt="Product 1" />
+              <div class="card-body text-center">
+                <h5 class="card-title">IPhone 6s</h5>
+                <p class="card-text">$250</p>
+                <button class="btn btn-custom">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <!-- Product Card 2 -->
+          <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="card">
+              <img
+                src="img/flip-flop.jpg"
+                class="card-img-top"
+                alt="Product 2"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">Flip-Flop</h5>
+                <p class="card-text">$35</p>
+                <button class="btn btn-custom">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <!-- Product Card 3 -->
+          <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="card">
+              <img src="img/reyban.jpg" class="card-img-top" alt="Product 3" />
+              <div class="card-body text-center">
+                <h5 class="card-title">Reyban</h5>
+                <p class="card-text">$140</p>
+                <button class="btn btn-custom">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="discorver-all d-flex justify-content-center">
+        <a href="products.html"><button class="btn btn-custom">Discover All</button></a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section
+      id="about"
+      class="content-section py-5 bg-light about-section"
+      data-aos="fade-up"
+    >
+      <div class="container">
+        <h2 class="text-center mb-5">About Us</h2>
+        <p class="text-center">
+          Presto.it is a platform where buyers and sellers meet to trade all
+          kinds of products. From electronics to clothing, we provide a seamless
+          experience for all your e-commerce needs.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="content-section py-5" data-aos="fade-up">
+      <div class="container">
+        <h2 class="text-center mb-5">Contact Us</h2>
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="Enter your name"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Enter your email"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea
+              class="form-control"
+              id="message"
+              rows="4"
+              placeholder="Your message"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-custom">Send Message</button>
+        </form>
+      </div>
+      <div class="text-center mt-4">
+        <button id="sales-button" class="btn btn-custom">
+          Start Sales Counter
+        </button>
+      </div>
+      <p id="sales-counter" class="text-center mt-2">Sales Today: 0</p>
+    </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 text-center">
+      <p>&copy; 2024 Presto.it All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap Js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- My Js -->
+    <script src="script.js"></script>
+  </body>
+</html>
