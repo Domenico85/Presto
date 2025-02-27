@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Presto.it</title>
+    <!-- Bootstrap Css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- AOS Css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- My Css -->
+    <link href="products.css" rel="stylesheet" />
+
+    <!-- Standard Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+
+    <!-- Apple Touch Icon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="192x192"
+      href="favicon/android-chrome-192x192.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="512x512"
+      href="favicon/android-chrome-512x512.png"
+    />
+    <link rel="apple-touch-icon" href="favicon/apple-touch-icon.png" />
+
+    <!-- Fallback favicon -->
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"
+          ><img
+            class="logo"
+            src="img/prestoit-high-resolution-logo-transparent.png"
+            alt="logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#products">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <input
+            type="checkbox"
+            id="darkmode-toggle"
+            aria-label="Toggle dark mode"
+          />
+          <label for="darkmode-toggle" class="darkmode-toggle">
+            <svg
+              class="sun"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M12 3V4M12 20V21M4 12H3M6.31412 6.31412L5.5 5.5M17.6859 6.31412L18.5 5.5M6.31412 17.69L5.5 18.5001M17.6859 17.69L18.5 18.5001M21 12H20M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12Z"
+                stroke="#000"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <svg
+              class="moon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M3.32031 11.6835C3.32031 16.6541 7.34975 20.6835 12.3203 20.6835C16.1075 20.6835 19.3483 18.3443 20.6768 15.032C19.6402 15.4486 18.5059 15.6834 17.3203 15.6834C12.3497 15.6834 8.32031 11.654 8.32031 6.68342C8.32031 5.50338 8.55165 4.36259 8.96453 3.32996C5.65605 4.66028 3.32031 7.89912 3.32031 11.6835Z"
+                stroke="#fff"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </label>
+          <div class="background"></div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header
+      class="hero-section d-flex align-items-center justify-content-center text-center"
+    >
+      <div>
+        <h1 data-aos="fade-up">All our Products</h1>
+        <p data-aos="fade-up" data-aos-delay="200">
+          Discover our amazing offers selected for you!
+        </p>
+      </div>
+    </header>
+    <section class="custom-carousel">
+      <h2>Featured Products</h2>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="img/camera.jpg" alt="Slide 1" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/glasses.jpg" alt="Slide 2" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/pc.jpg" alt="Slide 3" />
+          </div>
+
+          <div class="swiper-slide">
+            <img src="img/shoes.jpg" alt="Slide 4" />
+          </div>
+        </div>
+        <!-- Add Navigation -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <!-- Filters Section -->
+    <section
+      id="filters"
+      class="py-5 d-flex flex-column justify-content-between"
+    >
+      <div class="container">
+        <h2 class="text-center mb-4">Filter Products</h2>
+        <div class="row">
+          <!-- Price Range Filter -->
+          <div class="col-md-6 price-range">
+            <label for="priceRange" class="form-label">Price Range</label>
+            <input
+              type="range"
+              class="form-range"
+              min="0"
+              max="1000"
+              step="1"
+              id="priceRange"
+            />
+            <p id="priceRangeValue" class="text-center">$0 - $1000</p>
+          </div>
+
+          <!-- Keyword Filter -->
+          <div
+            class="col-md-6 d-flex flex-column justify-content-center fixed-filter"
+          >
+            <label for="keywordSearch" class="form-label"
+              >Search by Keyword</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="keywordSearch"
+              placeholder="Enter product name or description"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-5">
+        <button id="resetFilters" class="btn btn-secondary">
+          Reset Filters
+        </button>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="content-section py-5" data-aos="fade-up">
+      <div class="container">
+        <h2 class="text-center mb-5">Our Products</h2>
+        <div class="row g-4" id="products"></div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 text-center">
+      <p>&copy; 2024 <span>Presto.it</span> All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap Js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- My Js -->
+    <script src="products.js"></script>
+  </body>
+</html>
