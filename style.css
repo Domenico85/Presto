@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Dela Gothic One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: white;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.dark-mode a {
+  color: #bb86fc;
+}
+
+.navbar {
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar.scrolled {
+  background-color: #343a40 !important;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-light .navbar-brand,
+.navbar-light .nav-link {
+  color: #000;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar.scrolled .navbar-brand,
+.navbar.scrolled .nav-link {
+  color: #fff !important;
+}
+
+.navbar.scrolled:hover .navbar-brand:hover,
+.navbar.scrolled:hover .nav-link:hover {
+  color: orangered !important;
+}
+
+.nav-link:hover {
+  color: orangered;
+}
+
+.navbar-dark-mode {
+  background-color: #121212 !important;
+  color: white !important;
+}
+
+.logo {
+  width: 200px;
+}
+
+.hero-section {
+  height: 100vh;
+  background: url("img/header.jpg") center center/cover no-repeat;
+}
+
+.hero-section h1 {
+  color: orangered;
+}
+
+.content-section {
+  padding: 60px 0;
+}
+
+.card {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card-title {
+  color: orangered;
+}
+
+.btn-custom {
+  color: black;
+  background-color: orangered;
+}
+
+.btn-custom:hover {
+  color: orangered;
+  background-color: black;
+}
+
+footer {
+  background-color: #343a40;
+}
+
+footer span {
+  color: orangered;
+}
+
+.darkmode-toggle {
+  width: 100px;
+  height: 42px;
+  position: relative;
+  display: block;
+  background: #dad7cb;
+  border-radius: 200px;
+  box-shadow: inset 0 5px 15px rgba(0, 0, 0, 0.4),
+    inset 0 -5px 15px rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.darkmode-toggle::after {
+  content: "";
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: 4px;
+  left: 3px;
+  background: linear-gradient(180deg, #ffcc89, #d80b0b);
+  border-radius: 180px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#darkmode-toggle {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+#darkmode-toggle:checked + label {
+  background: #242424;
+}
+
+#darkmode-toggle:checked + label::after {
+  left: calc(100% - 38px);
+  transform: translateX(0);
+  background: linear-gradient(180deg, #777, #000);
+}
+
+.darkmode-toggle:active::after {
+  width: 42px;
+}
+
+.darkmode-toggle svg {
+  position: absolute;
+  width: 39px;
+  z-index: 100;
+  top: 5px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.darkmode-toggle svg.sun {
+  left: 57px;
+  top: 2px;
+}
+
+.darkmode-toggle svg.moon {
+  left: 5px;
+  top: 2px;
+  width: 0;
+  rotate: 90deg;
+}
+
+#darkmode-toggle:checked + label svg.sun {
+  width: 0;
+  rotate: 90deg;
+}
+
+#darkmode-toggle:checked + label svg.moon {
+  width: 39px;
+  rotate: 0deg;
+}
+
+/* Accessibility Focus State */
+#darkmode-toggle:focus + label {
+  outline: 2px solid #007bff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .darkmode-toggle {
+    width: 80px;
+    height: 36px;
+  }
+
+  .darkmode-toggle::after {
+    width: 30px;
+    height: 30px;
+    top: 3px;
+    left: 2px;
+  }
+
+  .darkmode-toggle svg {
+    width: 30px;
+  }
+}
+
+.about-dark-mode {
+  background-color: #333 !important;
+  color: white !important;
+}
