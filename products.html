@@ -208,6 +208,72 @@
     <section id="products" class="content-section py-5" data-aos="fade-up">
       <div class="container">
         <h2 class="text-center mb-5">Our Products</h2>
+        <!-- Add Product Button -->
+        <button id="addProductBtn" class="btn btn-custom">Add Product</button>
+
+        <!-- Modal for Adding Product -->
+        <div id="addProductModal" class="modal" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Add New Product</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <form id="addProductForm">
+                  <div class="form-group">
+                    <label for="productTitle">Title</label>
+                    <input
+                      type="text"
+                      id="productTitle"
+                      class="form-control"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="productPrice">Price</label>
+                    <input
+                      type="number"
+                      id="productPrice"
+                      class="form-control"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="productImage">Image URL</label>
+                    <input
+                      type="text"
+                      id="productImage"
+                      class="form-control"
+                      required
+                    />
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  id="saveProductBtn"
+                  class="btn btn-primary"
+                >
+                  Save Product
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="row g-4" id="products"></div>
       </div>
     </section>
@@ -223,7 +289,8 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- My Js -->
     <script src="js/products.js"></script>
   </body>

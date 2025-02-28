@@ -296,3 +296,27 @@ footer span {
     width: 30px;
   }
 }
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1050; /* Bootstrap default */
+  display: none;
+}
+
+.modal-backdrop {
+  display: none; /* Make sure backdrop is behind modal */
+}
+.modal {
+  z-index: 1050 !important; /* Ensures it's above the backdrop */
+}
+
+.modal-backdrop {
+  z-index: 1040 !important; /* Keeps backdrop behind modal */
+}
+
+.modal.show {
+  pointer-events: auto !important; /* Ensures modal elements can be clicked */
+}

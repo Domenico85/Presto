@@ -163,3 +163,36 @@ window.addEventListener("scroll", () => {
     navbar.classList.remove("navbar-dark-mode");
   }
 });
+
+// Show modal
+document.getElementById("addProductBtn").addEventListener("click", function () {
+  const modal = new bootstrap.Modal(document.getElementById("addProductModal"));
+  modal.show();
+});
+
+// Save product and hide modal
+document
+  .getElementById("saveProductBtn")
+  .addEventListener("click", function () {
+    const title = document.getElementById("productTitle").value;
+    const price = document.getElementById("productPrice").value;
+    const image = document.getElementById("productImage").value;
+
+    if (title && price && image) {
+      const newProduct = {
+        title,
+        price: parseFloat(price),
+        image,
+      };
+
+      allProducts.push(newProduct);
+      filteredProducts = [...allProducts];
+      renderProducts();
+
+      // Close modal with Bootstrap 5
+      const modal = bootstrap.Modal.getInstance(
+        document.getElementById("addProductModal")
+      );
+      modal.hide();
+    }
+  });
