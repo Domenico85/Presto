@@ -57,7 +57,7 @@ body.dark-mode a {
 
 .hero-section {
   height: 100vh;
-  background: url("/img/header.jpg") center center/cover no-repeat;
+  background: url("../img/header.jpg") center center/cover no-repeat;
 }
 
 .hero-section h1 {
