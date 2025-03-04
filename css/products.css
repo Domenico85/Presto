@@ -297,26 +297,31 @@ footer span {
   }
 }
 
-.modal {
+/* .modal {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 1050; /* Bootstrap default */
+  z-index: 1050;
+  display: none;
+} */
+
+.modal-backdrop {
   display: none;
 }
-
-.modal-backdrop {
-  display: none; /* Make sure backdrop is behind modal */
-}
 .modal {
-  z-index: 1050 !important; /* Ensures it's above the backdrop */
+  z-index: 1050 !important;
 }
 
 .modal-backdrop {
-  z-index: 1040 !important; /* Keeps backdrop behind modal */
+  z-index: 1040 !important;
 }
 
 .modal.show {
-  pointer-events: auto !important; /* Ensures modal elements can be clicked */
+  pointer-events: auto !important;
+}
+
+#addProductBtn {
+  display: flex;
+  margin: 20px auto;
 }
